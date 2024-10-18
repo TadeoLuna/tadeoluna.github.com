@@ -1,0 +1,302 @@
+<html>
+    <head>
+        <title>Tablas en html</title>
+        <link rel="stylesheet" href="../css/style.page.css" type="text/css">
+        <style type="text/css">
+            #tabla_uno{
+                width: 100%;
+                text-align: center;
+                margin: 0 auto;
+                color: #f7f1e1;
+                border-style: solid;
+                border-color: beige;
+                border-width: 1 px;
+                border-spacing: 5px;
+            }
+            #tabla_uno th{
+                background-color: #855e6e; 
+                padding: 20px;
+                text-align: center;
+            }
+            #tabla_uno td{
+                background-color: #ffb2c1;
+                color: #855e6e;
+                text-align: left;
+                border-style: solid;
+                border-color: aquamarine;
+                border-top-width: 3px;
+                border-radius: 5px;
+                margin: 10px;
+                text-align: center;
+            }
+            /*#tabla_dos{
+                color: red;
+             
+                }*/ 
+            /*#tabla_dos td{
+                    color:black;
+                    height: center;
+                    padding: 20px;
+            }*/
+            .tabla_dos{
+                width: 600px;
+                display: block;
+                margin: 0 auto;
+                border-collapse: collapse;
+                border-color: #855e6e;
+                border-style:double;
+            }
+            .tabla_dos td, .tabla_dos th{
+                width: 150px;
+                border-color: #855e6e;
+                color: #f7f1e1;
+                padding: 10px;
+            }
+            .celda_centrada{
+                text-align: center;
+                padding: 0px;
+                background-color: #855e6e;
+            }
+            #tabla_zebra{
+                width: 100%;
+            }
+            #tabla_zebra tbody tr:nth-child(even){
+                background-color:#ffb2c1;
+                color: #855e6e;
+            }
+            #tabla_zebra tbody tr:nth-child(odd){
+                background-color: #855e6e;
+                color: #f7f1e1;
+            }
+            #tabla_zebra thead tr{
+                background-color: beige;
+            }
+            .tabla_hover{
+                width: 80%;
+                margin: 0 auto;
+                color: #f7f1e1;
+            }
+            .tabla_hover  thead th{
+                background-color: #855e6e;
+                padding: 20px;
+                border: 1px solid beige;
+            }
+            .tabla_hover tbody td{
+                background-color: #ffb2c1;
+                padding: 10px;
+                    
+            }
+            .tabla_hover tbody tr:hover{
+                background-color: bisque;
+                color: #855e6e;
+            }
+            .centrar{
+                text-align: center;
+            }
+            p{
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1> TABLAS EN HTML</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="../html/primerapaginaweb.html">Inicio</a></li>
+                <li><a href="../html/Listas.html">Listas</a></li>
+                <li><a href="../html/Enlaces.html">Enlaces</a></li>
+                <li><a href="../html/Imagenes.html">Imagen</a></li>
+                <li><a href="#">Audio</a></li>
+                <li><a href="../html/video.html">Video</a></li>
+                <li><a href="#">Tablas</a></li>
+                <li><a href="#">Formulario</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section style="overflow-x: auto;">
+                <h2>Tablas</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula ultrices magna sit amet congue. Nulla eu lectus non turpis viverra tincidunt. Nam consectetur tortor quis ante rutrum, quis egestas velit fermentum. Praesent ac risus porttitor, dignissim massa eget, iaculis nisi. Nullam sit amet pulvinar enim. Morbi ut aliquet neque. Duis nulla lorem, auctor in diam ut, blandit eleifend magna. In id nunc enim. Donec maximus consectetur tellus, non eleifend orci commodo vel. Fusce gravida venenatis malesuada. Etiam accumsan dapibus enim, nec imperdiet nisl placerat vitae. In fringilla nibh vel mauris pharetra venenatis. Integer fringilla nisi massa, et eleifend urna laoreet eget. Ut nec tincidunt quam, eget volutpat nunc.</p>
+                <table border="1" id="tabla_uno">
+                <thead>
+                    <tr>
+                        <th>Matricula</th>
+                        <th>Nombre</th>
+                        <th>Apellido Paterno</th>
+                        <th>Apellido Materno</th>
+                        <th>Colegio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>202045875</td>
+                        <td>Patricio</td>
+                        <td>Solovino</td>
+                        <td>Sefue</td>
+                        <td>Urbanismo</td>
+                    </tr>
+                    <tr>
+                        <td>202055458</td>
+                        <td>Jose</td>
+                        <td>Casillas</td>
+                        <td>Rosas</td>
+                        <td>Diseño</td>
+                    </tr>
+                    <tr>
+                        <td>202048759</td>
+                        <td>Bartolo</td>
+                        <td>Sanchez</td>
+                        <td>Luna</td>
+                        <td>Urbanismo</td>
+                    </tr>
+                    <tr>
+                        <td>202048756</td>
+                        <td>Urelio</td>
+                        <td>Solovino</td>
+                        <td>Quintanilla</td>
+                        <td>Arquitectura</td>
+                    </tr>
+                    <tr>
+                        <td>202054829</td>
+                        <td>Josefina</td>
+                        <td>Solovino</td>
+                        <td>Sefue</td>
+                        <td>Urbanismo</td>
+                    </tr>
+                    <tr>
+                        <td>202054776</td>
+                        <td>Dory</td>
+                        <td>Torres</td>
+                        <td>Sefue</td>
+                        <td>Diseño</td>
+                    </tr>
+                </tbody>
+                <tfoot></tfoot>
+            </table>
+            </section>
+            
+            <section style="overflow-x: auto">
+            <h2>Tablas</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula ultrices magna sit amet congue. Nulla eu lectus non turpis viverra tincidunt. Nam consectetur tortor quis ante rutrum, quis egestas velit fermentum. Praesent ac risus porttitor, dignissim massa eget, iaculis nisi. Nullam sit amet pulvinar enim. Morbi ut aliquet neque. Duis nulla lorem, auctor in diam ut, blandit eleifend magna. In id nunc enim. Donec maximus consectetur tellus, non eleifend orci commodo vel. Fusce gravida venenatis malesuada. Etiam accumsan dapibus enim, nec imperdiet nisl placerat vitae. In fringilla nibh vel mauris pharetra venenatis. Integer fringilla nisi massa, et eleifend urna laoreet eget. Ut nec tincidunt quam, eget volutpat nunc.</p>
+            <table border="2" class="tabla_dos">
+                <thead>
+                    <tr>
+                        <th style="width: 200px;">Nombre</th>
+                        <th style="width: 100px; ">Edad</th>
+                        <th style="width: 200px;" colspan="2">Telefono</th>
+                        <th style="width: 100px;">Cooperacion</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rocio Lopez Mendoza</td>
+                        <td style="text-align: center; padding:0px;">15</td>
+                        <td>2548756989</td>
+                        <td>2216547789</td>
+                        <td style="text-align: center; padding: 0px; background-color: #855e6e;">100</td>
+                    </tr>
+                    <tr>
+                        <td>Josefina Lora Barranca</td>
+                        <td style="text-align: center; padding:0px;">14</td>
+                        <td>2487825458</td>
+                        <td>2216547789</td>
+                        <td style="text-align: center; padding: 0px; background-color: #855e6e">150</td>
+                    </tr>
+                    <tr>
+                        <td>Josue Hilario Mendoza</td>
+                        <td style="text-align: center; padding:0px;">16</td>
+                        <td>2114534547</td>
+                        <td>2216547789</td>
+                        <td  style="text-align: center; padding: 0px; background-color: #855e6e">80</td>
+                    </tr>
+                    <tr>
+                        <td>Rosas Huerta Lopez</td>
+                        <td style="text-align: center; padding:0px;">15</td>
+                        <td>1446588547</td>
+                        <td>2216547789</td>
+                        <td  style="text-align: center; padding: 0px; background-color: #855e6e">100</td>
+                    </tr>
+                    <tr>
+                        <td>Jose Gorge Lorenzo</td>
+                        <td style="text-align: center; padding:0px;">15</td>
+                        <td>2145582257</td>
+                        <td>2216547789</td>
+                        <td  style="text-align: center; padding: 0px; background-color: #855e6e">100</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Total</td>
+                        <td  style="text-align: center; padding: 0px; background-color: #855e6e">530</td>
+                    </tr>
+                </tbody>
+                <tfoot></tfoot>
+            </table>
+            </section>
+            <section>
+            <h2>Tablas</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula ultrices magna sit amet congue. Nulla eu lectus non turpis viverra tincidunt. Nam consectetur tortor quis ante rutrum, quis egestas velit fermentum. Praesent ac risus porttitor, dignissim massa eget, iaculis nisi. Nullam sit amet pulvinar enim. Morbi ut aliquet neque. Duis nulla lorem, auctor in diam ut, blandit eleifend magna. In id nunc enim. Donec maximus consectetur tellus, non eleifend orci commodo vel. Fusce gravida venenatis malesuada. Etiam accumsan dapibus enim, nec imperdiet nisl placerat vitae. In fringilla nibh vel mauris pharetra venenatis. Integer fringilla nisi massa, et eleifend urna laoreet eget. Ut nec tincidunt quam, eget volutpat nunc.</p>
+                <table id="" class="tabla_hover" style="overflow-x: auto">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Edad</th>
+                            <th>Deporte</th>  
+                            <th>Telefono</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lourdes Diaz Salamancas</td>
+                            <td class="centrar">20</td>
+                            <td class="centrar">Basquetk</td>
+                            <td>220184878</td>
+                            <td>lulu.diaz@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Luisa Jimenez Ramirez</td>
+                            <td class="centrar">19</td>
+                            <td class="centrar">Footbal</td>
+                            <td>758158593</td>
+                            <td>lulu.diaz@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Laura Isabel Torres</td>
+                            <td class="centrar">19</td>
+                            <td class="centrar">Footbal</td>
+                            <td>7548521456</td>
+                            <td>lulu.diaz@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Lourdes Diaz Salamancas</td>
+                            <td class="centrar">21</td>
+                            <td class="centrar">Footbal</td>
+                            <td>2215479627</td>
+                            <td>lulu.diaz@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Lourdes Diaz Salamancas</td>
+                            <td class="centrar">18</td>
+                            <td class="centrar">Footbal</td>
+                            <td>2215479627</td>
+                            <td>luord.diaz@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Lourdes Diaz Salamancas</td>
+                            <td class="centrar">23</td>
+                            <td class="centrar">Footbal</td>
+                            <td>1825261165</td>
+                            <td>lulu.diaz@gmail.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+        <footer>
+            <h5> Elaborado por Alan Tadeo Luna Huerta</h5>
+        </footer>
+    </body>
+</html>

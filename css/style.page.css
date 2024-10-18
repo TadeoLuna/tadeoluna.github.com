@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header,nav,main,footer{
+    /*width:960px;*/
+    width: 100%;
+    padding:20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header{
+    height:100px;
+    background-color: #CE7095;
+    color: #f7f1e1;
+}
+nav{
+    height:100px;
+    background-color: #ffb2c1;
+}
+main{ 
+    height:auto;
+    background-color: #ffdbd7;
+    padding: 80px;
+}
+section{
+    /*width: 800px*/
+    width:80%;
+    height:auto;
+    background-color: #CE7095;
+    margin-bottom:20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding:50px;
+    
+}
+footer{
+    height:50px;
+    background-color: #855e6e;
+    color: #ffdbd7;
+}
+h1 {
+    margin-bottom: 20px;
+    font-family:"Spicy Rice", serif;
+    font-size: 50px;
+}
+h1,h5{
+    text-align: center;
+}
+ul{
+    text-align: center;
+}
+ul li{
+    display:inline-block;
+    width: 10%;
+    padding:20px;
+    background-color: #855e6e;
+    color: #f7f1e1;
+}
+nav ul li a, nav ul li a:visited, nav ul il a:link{
+    color: #f7f1e1;
+    text-decoration-color: none;
+}
+nav ul li:hover{
+    background-color: #f7f1e1;
+}
+nav ul li:hover{
+    color: #855e6e;
+}
+img{
+    width:400px;
+    height:auto;
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h2,p{
+    color: #f7f1e1;
+}
+h2{ 
+    margin-bottom: 20px;
+    text-align: center;
+}
+#nino_pintando{
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+}
+#ninos_leyendo{
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+}
+
+main nav{
+    width: 800px;
+    padding: 30px;
+}
+#icono{
+    width: 32px;
+    height: auto;
+}
+p{
+    margin-bottom: 15px;
+    font-family: "Cutive Mono";
+    font-size: 16px;
+}
+#fondo_section{
+    background-image: url("../img/ninasjugando.webp");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#fondo_section p, #fondo_section h2{
+    color: #855e6e;
+}
+#filtro_imagen{
+    text-align: center;
+}
+#filtros_imagenes {
+    display: inline-block;
+    width: 15%;
+    height: auto;
+    padding: 10px;
+}
+#img1{
+    filter: brightness(150%);}
+#img2{
+    filter: contrast(50%);}
+#img3{
+    filter: grayscale(50%);}
+#img4{
+    filter: invert(10%);
+}
+#img5{
+    filter: opacity(0.2);
+}
+#img6{
+    filter: sepia(100%);
+}
+#img7{filter: saturate(150%);
+}
+#img8{filter: blur(5px);
+}
+
+#img9{filter: drop-shadow(10px 10px 20px white);
+}
+
+#img10{filter: contrast(150%)}  
+
+iframe, audio{
+    margin: auto;
+}
